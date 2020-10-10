@@ -1,0 +1,21 @@
+[gd_scene format=2]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Day Overlay" type="ColorRect" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Day Overlay"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Lunes"
+align = 1
+valign = 1

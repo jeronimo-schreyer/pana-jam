@@ -8,15 +8,27 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Reference",
+"class": "WhiskersParser",
+"language": "GDScript",
+"path": "res://core/WhiskersParser.gd"
+} ]
 _global_script_class_icons={
-
+"WhiskersParser": ""
 }
 
 [application]
 
 config/name="pana-social-media"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1280
+window/size/height=720
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
 
 [rendering]
 
