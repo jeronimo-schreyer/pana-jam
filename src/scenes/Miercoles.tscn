@@ -321,7 +321,7 @@ texture = ExtResource( 10 )
 [node name="Descripcion" parent="Control/Feed/PanelContainer/VBoxContainer/Publicacion neutra/VBoxContainer" index="1"]
 margin_right = 673.0
 margin_bottom = 342.0
-text = "Foto neutra despues de un neutro o negativo"
+text = ""
 
 [node name="Comentarios" parent="Control/Feed/PanelContainer/VBoxContainer/Publicacion neutra/VBoxContainer" index="2"]
 margin_top = 362.0
@@ -341,9 +341,8 @@ margin_right = 673.0
 visible = false
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 422.0
 margin_right = 679.0
-margin_bottom = 794.0
+margin_bottom = 372.0
 dialogue_file = "res://conversations/MiercolesFoto1Lista.json"
 _feed = NodePath("../../..")
 
@@ -358,7 +357,7 @@ texture = ExtResource( 2 )
 [node name="Descripcion" parent="Control/Feed/PanelContainer/VBoxContainer/Publicacion positiva/VBoxContainer" index="1"]
 margin_right = 673.0
 margin_bottom = 342.0
-text = "Foto positiva despues de un positivo"
+text = ""
 
 [node name="Comentarios" parent="Control/Feed/PanelContainer/VBoxContainer/Publicacion positiva/VBoxContainer" index="2"]
 margin_top = 362.0

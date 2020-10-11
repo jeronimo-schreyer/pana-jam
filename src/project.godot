@@ -33,7 +33,7 @@ _global_script_class_icons={
 [application]
 
 config/name="pana-social-media"
-run/main_scene="res://scenes/Lunes.tscn"
+run/main_scene="res://scenes/Main.tscn"
 config/icon="res://icon.png"
 
 [display]

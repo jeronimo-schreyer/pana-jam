@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/main.gd" type="Script" id=1]
+[ext_resource path="res://scenes/Lunes.tscn" type="PackedScene" id=2]
+
+[node name="Disclaimer" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+first_day = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 32.0
+margin_right = -32.0
+text = "Este juego tiene como objetivo concientizar sobre la problemática del acoso y violencia digital.
+
+Según la Organización Mundial de la Salud “La violencia es el uso intencional de la fuerza física, amenazas contra uno mismo, otra persona, un grupo o una comunidad que tiene como consecuencia o es muy probable que tenga como consecuencia un traumatismo, daños psicológicos, problemas de desarrollo o la muerte”.
+
+¿Qué sería entonces la violencia digital? El uso de esa amenaza o relación de poder ejercida a través de dispositivos digitales.
+
+Debés tener más de 16 años para jugar.
+
+Este juego contiene material ofensivo, violento y expresiones de texto / visuales despectivos que pueden llegar a incomodar. No continúes si crees que podés sensibilizarte negativamente por los comentarios y actitudes aqui expresadas.
+
+Los mensajes que se ven en el juego están basados en historias reales que sufren diariamente las personas en las redes.
+
+Ninguna de estas actitudes es avalada por las personas que desarrollamos el juego, quienes repudian cualquier tipo de violencia hacia les otres.
+"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+autostart = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

@@ -269,13 +269,13 @@ custom_constants/separation = 50
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 679.0
-margin_bottom = 447.0
+margin_bottom = 372.0
 dialogue_file = "res://conversations/juevesFoto1Lista.json"
 _feed = NodePath("../../..")
 
 [node name="VBoxContainer" parent="Control/Feed/PanelContainer/VBoxContainer/Publicacion2" index="0"]
 margin_right = 676.0
-margin_bottom = 444.0
+margin_bottom = 369.0
 
 [node name="Foto" parent="Control/Feed/PanelContainer/VBoxContainer/Publicacion2/VBoxContainer" index="0"]
 margin_right = 673.0
@@ -283,9 +283,13 @@ texture = ExtResource( 2 )
 
 [node name="Descripcion" parent="Control/Feed/PanelContainer/VBoxContainer/Publicacion2/VBoxContainer" index="1"]
 margin_right = 673.0
+margin_bottom = 342.0
+text = ""
 
 [node name="Comentarios" parent="Control/Feed/PanelContainer/VBoxContainer/Publicacion2/VBoxContainer" index="2"]
+margin_top = 362.0
 margin_right = 673.0
+margin_bottom = 366.0
 
 [node name="VBoxContainer" parent="Control/Feed/PanelContainer/VBoxContainer/Publicacion2/VBoxContainer/Comentarios" index="0"]
 margin_right = 673.0
@@ -301,13 +305,13 @@ visible = false
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 679.0
-margin_bottom = 447.0
+margin_bottom = 372.0
 dialogue_file = "res://conversations/juevesFoto2Lista.json"
 _feed = NodePath("../../..")
 
 [node name="VBoxContainer" parent="Control/Feed/PanelContainer/VBoxContainer/Publicacion3" index="0"]
 margin_right = 676.0
-margin_bottom = 444.0
+margin_bottom = 369.0
 
 [node name="Foto" parent="Control/Feed/PanelContainer/VBoxContainer/Publicacion3/VBoxContainer" index="0"]
 margin_right = 673.0
@@ -315,9 +319,13 @@ texture = ExtResource( 9 )
 
 [node name="Descripcion" parent="Control/Feed/PanelContainer/VBoxContainer/Publicacion3/VBoxContainer" index="1"]
 margin_right = 673.0
+margin_bottom = 342.0
+text = ""
 
 [node name="Comentarios" parent="Control/Feed/PanelContainer/VBoxContainer/Publicacion3/VBoxContainer" index="2"]
+margin_top = 362.0
 margin_right = 673.0
+margin_bottom = 366.0
 
 [node name="VBoxContainer" parent="Control/Feed/PanelContainer/VBoxContainer/Publicacion3/VBoxContainer/Comentarios" index="0"]
 margin_right = 673.0

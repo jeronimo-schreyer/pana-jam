@@ -469,6 +469,8 @@ margin_right = 673.0
 margin_right = 673.0
 
 [node name="Day Overlay" parent="." instance=ExtResource( 4 )]
+visible = true
+modulate = Color( 0, 0, 0, 1 )
 [connection signal="gui_input" from="Control/Feed" to="Control/Feed" method="_on_gui_input"]
 [connection signal="selected" from="Control/Feed/PanelContainer/VBoxContainer/Publicacion" to="Control/Feed/PanelContainer/VBoxContainer/Publicacion2" method="show"]
 [connection signal="selected" from="Control/Feed/PanelContainer/VBoxContainer/Publicacion2" to="Control/Feed" method="switch_to_next_scene"]

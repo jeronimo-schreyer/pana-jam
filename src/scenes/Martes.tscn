@@ -321,7 +321,7 @@ texture = ExtResource( 10 )
 [node name="Descripcion" parent="Control/Feed/PanelContainer/VBoxContainer/Publicacion positiva/VBoxContainer" index="1"]
 margin_right = 673.0
 margin_bottom = 342.0
-text = "este es una foto neutra despues de dar positivo"
+text = ""
 
 [node name="Comentarios" parent="Control/Feed/PanelContainer/VBoxContainer/Publicacion positiva/VBoxContainer" index="2"]
 margin_top = 362.0
@@ -357,7 +357,7 @@ texture = ExtResource( 9 )
 [node name="Descripcion" parent="Control/Feed/PanelContainer/VBoxContainer/Publicacion negativa/VBoxContainer" index="1"]
 margin_right = 673.0
 margin_bottom = 342.0
-text = "Esta es una foto triste despues de un comentario negativo"
+text = ""
 
 [node name="Comentarios" parent="Control/Feed/PanelContainer/VBoxContainer/Publicacion negativa/VBoxContainer" index="2"]
 margin_top = 362.0

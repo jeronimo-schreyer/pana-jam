@@ -13,8 +13,33 @@ anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="Label" type="Label" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-text = "FIN"
+anchor_left = 0.03125
+anchor_top = 0.0351562
+anchor_right = 0.96875
+anchor_bottom = 0.585938
+text = "La violencia digital sucede a diario y ha sido nuestro objetivo a través de este juego visibilizar esta problemática, generando conciencia y poniéndonos en el lugar de las víctimas.
+
+Agradecemos a todas las personas que aportaron sus experiencias.
+"
 align = 1
 valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 405.0
+text = "COLABORADORES
+
+papingui
+chu357
+undeadwizard
+pmzazu
+jairo"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
