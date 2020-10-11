@@ -9,19 +9,31 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "ScrollContainer",
+"class": "Feed",
+"language": "GDScript",
+"path": "res://core/feed.gd"
+}, {
+"base": "Button",
+"class": "Opcion",
+"language": "GDScript",
+"path": "res://ui/opcion.gd"
+}, {
 "base": "Reference",
 "class": "WhiskersParser",
 "language": "GDScript",
 "path": "res://core/WhiskersParser.gd"
 } ]
 _global_script_class_icons={
+"Feed": "",
+"Opcion": "",
 "WhiskersParser": ""
 }
 
 [application]
 
 config/name="pana-social-media"
-run/main_scene="res://scenes/Main.tscn"
+run/main_scene="res://scenes/Lunes.tscn"
 config/icon="res://icon.png"
 
 [display]

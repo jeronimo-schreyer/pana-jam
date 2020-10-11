@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://core/feed.gd" type="Script" id=1]
+[ext_resource path="res://scenes/Martes.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ui/publicacion.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ui/day_overlay.tscn" type="PackedScene" id=4]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Feed" type="ScrollContainer" parent="."]
+anchor_left = 0.25
+anchor_top = 0.134722
+anchor_right = 0.771875
+anchor_bottom = 1.0
+mouse_filter = 1
+scroll_horizontal_enabled = false
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+next_day = ExtResource( 2 )
+scroll_sensitivity = 0.05
+
+[node name="PanelContainer" type="PanelContainer" parent="Feed"]
+margin_right = 668.0
+margin_bottom = 1002.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Feed/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 661.0
+margin_bottom = 995.0
+mouse_filter = 2
+custom_constants/separation = 50
+
+[node name="Publicacion" parent="Feed/PanelContainer/VBoxContainer" instance=ExtResource( 3 )]
+margin_bottom = 469.0
+dialogue_file = "res://conversations/foto1Personaje1.json"
+_feed = NodePath("../../..")
+
+[node name="Publicacion2" parent="Feed/PanelContainer/VBoxContainer" instance=ExtResource( 3 )]
+margin_top = 519.0
+margin_bottom = 988.0
+dialogue_file = "res://conversations/foto2Personaje1.json"
+_feed = NodePath("../../..")
+
+[node name="Day Overlay" parent="." instance=ExtResource( 4 )]
+[connection signal="gui_input" from="Feed" to="Feed" method="_on_gui_input"]
+
+[editable path="Day Overlay"]
