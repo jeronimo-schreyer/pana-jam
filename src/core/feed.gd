@@ -15,6 +15,7 @@ func _ready():
 func on_opcion_pressed():
 	answered = answered + 1
 	if answered == $PanelContainer/VBoxContainer.get_child_count():
+		yield(get_tree().create_timer(5), "timeout")
 		get_tree().change_scene_to(next_day)
 	
 func _on_gui_input(event : InputEvent):

@@ -25,7 +25,7 @@ func _ready():
 
 func create_conversation(comment):
 		var conversacion = __conversacion.instance()
-		conversacion.get_node("RichTextLabel").bbcode_text = comment
+		conversacion.get_node("Control/RichTextLabel").bbcode_text = comment
 		$VBoxContainer/Comentarios/VBoxContainer.add_child_below_node(
 			last_conversacion, conversacion)
 		last_conversacion = conversacion
