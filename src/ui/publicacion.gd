@@ -1,5 +1,10 @@
 extends PanelContainer
 
+signal selected
+signal positivo
+signal negativo
+signal neutro
+
 export (String) var dialogue_file
 export (NodePath) var _feed
 
@@ -16,8 +21,12 @@ var block = {}
 func _ready():
 	var block = parser.start_dialogue(dialogue_data)
 	
-	for comment in block.text.split("\n-----\n"):
-		create_conversation(comment)
+	if !block.text.empty():
+		if block.text.count("\n-----\n") > 0:
+			for comment in block.text.split("\n-----\n"):
+				create_conversation(comment)
+		else:
+			create_conversation(block.text)
 	
 	if block.options.size() > 0:
 		for option in block.options:
@@ -35,7 +44,6 @@ func create_option(key : String, text : String):
 	opcion.key = key
 	opcion.text = text
 	opcion.connect("selected", self, "on_opcion_pressed")
-	opcion.connect("pressed", feed, "on_opcion_pressed")
 	$VBoxContainer/Comentarios/VBoxContainer/Opciones.add_child(opcion)
 
 func on_opcion_pressed(key, text):
@@ -47,3 +55,5 @@ func on_opcion_pressed(key, text):
 	if !block.empty():
 		for comment in block.text.split("\n-----\n"):
 			create_conversation(comment)
+	
+	emit_signal("selected")
